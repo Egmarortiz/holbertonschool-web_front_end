@@ -1,32 +1,22 @@
 
-html {
-  scroll-behavior: smooth;            /* smooth interpolation between scroll positions */
-  -webkit-overflow-scrolling: touch;  /* enable native momentum scrolling on iOS */
-}
-
-/* 1. Base text color */
-body,
-a {
-  color: var(--text--color);
-}
-
-
-/* 3. Visually hidden elements are removed from layout */
-.visually-hidden {
-  display: none;
-}
-
-/* 4. Card category labels get the accent color */
-.card-category,
-.section-tagline {
-  color: var(--color--primary);
-}
-
 :root {
-  --color-primary: #d73953;
-  --color-black: #090909;
-  --color-white: #ffffff;
-  --color-light-grey: #f3f3f3;
+  --color-primary:   #d73953;
+  --color-black:     #090909;
+  --color-white:     #ffffff;
+  --color-light-grey:#f3f3f3;
   --color-dark-grey: #353535;
-  --text-color: var(--color--black);
+  --text-color:      var(--color-black);
+}
+
+.section-tagline,
+.card-category {
+  color: var(--color-primary);
+}
+
+body {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
 }
