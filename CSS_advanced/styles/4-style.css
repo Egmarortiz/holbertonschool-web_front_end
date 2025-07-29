@@ -1,16 +1,33 @@
 :root {
-  /* 1. Define two font‑family variables */
-  --font-family-base:  'Helvetica Neue', Helvetica, Arial, sans‑serif;
-  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans‑serif;
+  --color-primary:   #d73953;
+  --color-black:     #090909;
+  --color-white:     #ffffff;
+  --color-light-grey:#f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color:      var(--color-black);
+
+  /* Font stacks stored as custom properties */
+  --font-family-base:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* 2. Apply the base font to the document body */
+.section-tagline,
+.card-category {
+  color: var(--color-primary);
+}
+
 body {
+  color: var(--text-color);
+    /* Base text uses body font stack */
   font-family: var(--font-family-base);
 }
 
-/* 3. Apply the title font to all headings */
+a {
+  color: var(--text-color);
+}
+
 h1, h2, h3, h4, h5, h6 {
+  /* Headings use title font stack */
   font-family: var(--font-family-title);
 }
 
