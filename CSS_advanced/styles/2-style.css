@@ -1,0 +1,25 @@
+/* 1. Base text color */
+body {
+  color: #161616;
+}
+
+/* 2. Links inherit the same text color */
+a {
+  color: #161616;
+}
+
+/* 3. Visually hidden elements are removed from layout */
+.visually-hidden {
+  display: none;
+}
+
+/* 4. Card category labels get the accent color */
+.card-category {
+  color: #D73953;
+}
+
+/* 5. Section taglines also get the same accent color */
+.section-tagline {
+  color: #D73953;
+}
+
