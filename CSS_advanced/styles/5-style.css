@@ -20,7 +20,7 @@
 }
 
 .section-tagline {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .card-category {
@@ -28,13 +28,14 @@
 }
 
 html {
-    font-size: 62.5%;
-    /* Default font size */
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  /* Default font size */
 }
 
 body {
   color: var(--text-color);
-    /* Base text uses body font stack  */
+  /* Base text uses body font stack  */
   font-family: var(--font-family-base);
   font-size: var(--font-size-medium);
 }
