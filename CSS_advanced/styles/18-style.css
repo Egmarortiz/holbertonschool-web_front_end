@@ -306,39 +306,40 @@ a:active {
     margin-right: auto;
 }
 
+/* 1. Float the .navbar-menu right */
 .navbar-menu {
-    float: right;
+  float: right;
 }
 
-.nav {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul {
+/* 2. Style your <nav> */
+nav {
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-align: center;
+  /* if your menu is a <ul> inside nav: */
+  list-style: none;       /* “no styling” on lists */
+  text-align: center;     /* center-align all inline children */
 }
 
-.nav .nav-item {
-    font-family: var(--nav-item-font-family);
-    font-weight: var(--nav-item-font-weight);
-    font-size: var(--nav-item-font-size);
-    letter-spacing: var(--nav-item-letter-spacing);
-    display: var(--nav-item-display);
-    margin: var(--nav-item-margin);
+/* 3. nav‐item inside nav */
+nav .nav-item {
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
 }
 
-.nav .nav-link {
-    display: block;
-    padding: 0.5rem 1rem;
+/* 4. nav‐link inside nav */
+nav .nav-link {
+  display: block;
+  /* top/bottom = 0.5rem (half root), left/right = 1rem (root) */
+  padding: 0.5rem 1rem;
 }
 
-.nav .nav-link:hover {
-    color: var(--nav-item-link-hover);
+/* 5. hover state */
+nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
 }
 
 .section {
