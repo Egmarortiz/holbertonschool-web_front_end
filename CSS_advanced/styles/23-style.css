@@ -425,18 +425,14 @@ ul.row {
     padding: var(--footer-padding);
 }
 
-/* Footer address text uses your main text color */
 .footer-address {
-  color: var(--text-color);
+    color: var(--text-color);
 }
 
-/* Social links render as block-level elements */
 .social-link {
-  display: block;
+    display: block;
 }
 
-/* Any SVG inside a social link picks up the same text color */
-.social-link svg {
-  fill: var(--text-color);
+.social-link > svg {
+    fill: var(--text-color);
 }
-
